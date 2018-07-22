@@ -1,9 +1,7 @@
-import com.mongodb.MongoClient;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
 import com.mongodb.BasicDBObject;
-
+import com.mongodb.MongoClient;
 import org.junit.Test;
+
 import java.net.UnknownHostException;
 
 import static org.hamcrest.CoreMatchers.is;

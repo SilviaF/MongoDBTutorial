@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a133241-fb48-4c95-8078-5db25f574099" name="Default" comment="" />
+    <list default="true" id="4a133241-fb48-4c95-8078-5db25f574099" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -28,15 +34,24 @@
       <file leaf-file-name="MyMongo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            <state relative-caret-position="186">
+              <caret line="13" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-                <element signature="e#1483#1484#0" expanded="true" />
-                <element signature="e#1548#1549#0" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
+                <element signature="e#1359#1360#0" expanded="true" />
+                <element signature="e#1421#1422#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -44,11 +59,8 @@
       <file leaf-file-name="MongoTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -62,6 +74,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -70,14 +85,16 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java" />
         <option value="$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
     <option name="width" value="943" />
     <option name="height" value="1087" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -93,21 +110,15 @@
               <item name="DatabaseTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="DatabaseTest" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DatabaseTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DatabaseTest" type="462c0819:PsiDirectoryNode" />
-              <item name="com.mongodb.MongoConnection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DatabaseTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DatabaseTest" type="462c0819:PsiDirectoryNode" />
-              <item name="com.mongodb.MongoTests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/com.mongodb.MongoTests" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -267,9 +278,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MongoTests_shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed - 2018.07.22 at 22h 45m 46s.xml">
-      <configuration name="MongoTests.shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MongoTests - 2018.07.22 at 22h 47m 40s.xml">
       <configuration name="MongoTests" configurationId="JUnit" />
     </history-entry>
@@ -297,6 +305,9 @@
     <history-entry file="MongoTests - 2018.07.22 at 23h 03m 28s.xml">
       <configuration name="MongoTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MongoTests - 2018.07.22 at 23h 15m 01s.xml">
+      <configuration name="MongoTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -309,12 +320,12 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3282365" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4009688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2007535" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -332,6 +343,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/DatabaseTest" />
+      <path value="$PROJECT_DIR$/com.mongodb.MongoConnection" />
+      <path value="$PROJECT_DIR$/com.mongodb.MongoTests" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/jdk.internal.le/jdk/internal/jline/internal/TestAccessible.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -340,34 +358,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        <state relative-caret-position="186">
+          <caret line="13" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="447">
+          <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
         </state>
       </provider>
     </entry>

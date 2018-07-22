@@ -50,5 +50,4 @@ public class MyMongo {
         return this.myDB.getCollection(collectionName);
     }
 
-
 }
