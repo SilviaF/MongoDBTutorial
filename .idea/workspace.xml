@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a133241-fb48-4c95-8078-5db25f574099" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DatabaseTest" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyMongo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1610#1611#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MongoTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-238">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Mongo/MyMongo.java" />
+        <option value="$PROJECT_DIR$/Tests/MongoTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java" />
+        <option value="$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="55" />
+    <option name="width" value="943" />
+    <option name="height" value="1087" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DatabaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DatabaseTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DatabaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DatabaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="com.mongodb.MongoConnection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DatabaseTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DatabaseTest" type="462c0819:PsiDirectoryNode" />
+              <item name="com.mongodb.MongoTests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MyMongo">
+    <configuration name="MyMongo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyMongo" />
+      <module name="DatabaseTest" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="MongoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MongoTests.shouldGetACollectionFromTheDatabase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoTests" />
+      <option name="METHOD_NAME" value="shouldGetACollectionFromTheDatabase" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MongoTests.shouldGetADatabaseFromTheMongoClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoTests" />
+      <option name="METHOD_NAME" value="shouldGetADatabaseFromTheMongoClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MongoTests.shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoTests" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.MongoTests.shouldGetADatabaseFromTheMongoClient" />
+      <item itemvalue="JUnit.MongoTests.shouldGetACollectionFromTheDatabase" />
+      <item itemvalue="JUnit.MongoTests.shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" />
+      <item itemvalue="JUnit.MongoTests" />
+      <item itemvalue="Application.MyMongo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyMongo" />
+        <item itemvalue="JUnit.MongoTests" />
+        <item itemvalue="JUnit.MongoTests.shouldGetADatabaseFromTheMongoClient" />
+        <item itemvalue="JUnit.MongoTests.shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" />
+        <item itemvalue="JUnit.MongoTests.shouldGetACollectionFromTheDatabase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a133241-fb48-4c95-8078-5db25f574099" name="Default" comment="" />
+      <created>1532274610853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532274610853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MongoTests_shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed - 2018.07.22 at 22h 45m 46s.xml">
+      <configuration name="MongoTests.shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests - 2018.07.22 at 22h 47m 40s.xml">
+      <configuration name="MongoTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests_shouldGetADatabaseFromTheMongoClient - 2018.07.22 at 22h 48m 46s.xml">
+      <configuration name="MongoTests.shouldGetADatabaseFromTheMongoClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests_shouldGetADatabaseFromTheMongoClient - 2018.07.22 at 22h 48m 54s.xml">
+      <configuration name="MongoTests.shouldGetADatabaseFromTheMongoClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests - 2018.07.22 at 22h 48m 57s.xml">
+      <configuration name="MongoTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests_shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed - 2018.07.22 at 23h 00m 02s.xml">
+      <configuration name="MongoTests.shouldNotBeAbleToUseMongoClientAfterItHasBeenClosed" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests - 2018.07.22 at 23h 00m 09s.xml">
+      <configuration name="MongoTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests - 2018.07.22 at 23h 02m 10s.xml">
+      <configuration name="MongoTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests_shouldGetADatabaseFromTheMongoClient - 2018.07.22 at 23h 03m 23s.xml">
+      <configuration name="MongoTests.shouldGetADatabaseFromTheMongoClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MongoTests - 2018.07.22 at 23h 03m 28s.xml">
+      <configuration name="MongoTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.32619774" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3282365" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4009688" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="5" side_tool="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/jdk.internal.le/jdk/internal/jline/internal/TestAccessible.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.mongodb.MongoTests/MongoTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/com.mongodb.MongoConnection/MyMongo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
