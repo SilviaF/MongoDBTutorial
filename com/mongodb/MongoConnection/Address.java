@@ -2,9 +2,9 @@ public class Address {
 
     private String street;
     private String city;
-    private String zip;
+    private long zip;
 
-    public Address(String street, String city, String zip){
+    public Address(String street, String city, long zip){
         this.street = street;
         this.city = city;
         this.zip = zip;
@@ -21,7 +21,7 @@ public class Address {
         return this.city;
     }
 
-    public String getZip(){
+    public long getZip(){
         return this.zip;
     }
 
@@ -36,7 +36,7 @@ public class Address {
         this.city = city;
     }
 
-    public void setZip(String zip){
+    public void setZip(long zip){
         this.zip = zip;
     }
 

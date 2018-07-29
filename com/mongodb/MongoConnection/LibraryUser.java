@@ -51,7 +51,7 @@ public class LibraryUser {
         return address.getCity();
     }
 
-    public String getZip(){
+    public long getZip(){
         return address.getZip();
     }
 
@@ -62,7 +62,7 @@ public class LibraryUser {
         allInfo.add(age);
         allInfo.add(address.getStreet());
         allInfo.add(address.getCity());
-        allInfo.add(address.getZip());
+        allInfo.add(Long.toString(address.getZip()));
         allInfo.add(Long.toString(phone));
         return allInfo;
     }
@@ -71,7 +71,7 @@ public class LibraryUser {
      setters
      ************************/
 
-    public void setAddress(String street, String city, String zip){
+    public void setAddress(String street, String city, long zip){
         this.address.setStreet(street);
         this.address.setCity(city);
         this.address.setZip(zip);
@@ -93,7 +93,7 @@ public class LibraryUser {
         this.address.setCity(city);
     }
 
-    public void setZip(String zip){
+    public void setZip(long zip){
         this.address.setZip(zip);
     }
 

@@ -1,6 +1,8 @@
 import com.mongodb.*;
 
 import java.util.List;
+import java.util.Map;
+
 import static java.util.Arrays.asList;
 
 public class MyMongo {
@@ -23,12 +25,41 @@ public class MyMongo {
             System.out.println("Collection name: " + myMongo.dbCollection.getName());
 
             //Create User
-            LibraryUser kyloRen = new LibraryUser("kylo","Kylo Ren", 31, new Address("Star Destroyer", "Tatooine","09SD14"), asList(2435184, 2435548));
-            kyloRen.setPhone(31415926535L);
-            System.out.println(kyloRen.getAllInfo());
+            LibraryUser newUser = createUser(
+                    "Id3",
+                    "Kylo Ren",
+                    20,
+                    new Address(
+                            "Street Address",
+                            "City",
+                            12345),
+                    asList(
+                            27464,
+                            747854),
+                    4895138675L);
 
             //Insert adapted user to mongoDB
-            myMongo.dbCollection.insert(UserAdaptor.toDBObject(kyloRen));
+//            insertUserIntoDB(myMongo.dbCollection, newUser);
+
+            //Retrieve document by Id from mongoDB
+            DBObject userFound = getUserByID(myMongo.dbCollection, "anId");
+            System.out.println("Name retrieved by ID: " + userFound.get("name"));
+
+            //Retrieve document(s) by key from mongoDB
+            DBCursor results = getUserByKey(myMongo.dbCollection, "name", "Kylo Ren");
+            System.out.println("Records retrieved by key: " + results.size());
+
+            for (DBObject result : results){
+                System.out.println("Documents retrieved: " + result.toString());
+            }
+
+            System.out.println("------------------------------------------");
+
+            results = getSpecificValueByKey(myMongo.dbCollection, "name", "Kylo Ren", "address");
+            for (DBObject result : results){
+                System.out.println("Documents retrieved: " + result.toString());
+            }
+
 
 
 
@@ -55,7 +86,7 @@ public class MyMongo {
 //            myMongo.dbCollection.insert(penguin);
 
         } catch (Exception e) {
-            e.getMessage();
+            System.err.println("Error encountered: " + e.getMessage());
         } finally {
             myMongo.closeConnection();
         }
@@ -94,5 +125,34 @@ public class MyMongo {
 
         return document;
     }
+
+    public static LibraryUser createUser(String id, String name, int age, Address address, List<Integer> books, long phone) {
+        LibraryUser libraryUser = new LibraryUser(id, name, age, address, books);
+        libraryUser.setPhone(phone);
+        return libraryUser;
+    }
+
+    public static void insertUserIntoDB(DBCollection collection, LibraryUser libraryUser) {
+        collection.insert(UserAdaptor.toDBObject(libraryUser));
+    }
+
+    public static DBObject getUserByID(DBCollection collection, String userID) {
+        DBObject query = new BasicDBObject("_id", userID);
+        DBCursor cursor = collection.find(query);
+        DBObject userFound = cursor.one();
+        return userFound;
+    }
+
+    public static DBCursor getUserByKey(DBCollection collection, String key, String value){
+        DBCursor results = collection.find(new BasicDBObject(key, value));
+        return results;
+    }
+
+    public static DBCursor getSpecificValueByKey(DBCollection collection, String key, String value, String output){
+        DBCursor results = collection.find(new BasicDBObject(key, value),
+                new BasicDBObject(output, 0));
+        return results;
+    }
+
 
 }
