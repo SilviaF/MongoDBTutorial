@@ -4,9 +4,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.net.UnknownHostException;
+import java.util.List;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.nullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.notNullValue;
 
@@ -53,7 +55,8 @@ public class MongoTests {
         mongoTest = new MyMongo();
         mongoTest.getConnection();
 
-        mongoTest.myDB = mongoTest.getDatabase("TestDB");;
+        mongoTest.myDB = mongoTest.getDatabase("TestDB");
+        ;
 
         // When
         mongoTest.dbCollection = mongoTest.getDBCollection("TestCollection");
@@ -77,7 +80,7 @@ public class MongoTests {
     @Test
     public void shouldTurnAPersonIntoADBObject() {
         // Given
-        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 29, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854));
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 29, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 49884577);
         bob.setPhone(1234567890L);
 
         // When
@@ -104,7 +107,7 @@ public class MongoTests {
         DB database = mongoClient.getDB("Examples");
         DBCollection collection = database.getCollection("people");
 
-        LibraryUser charlie = new LibraryUser("charlie", "Charles", 58, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74));
+        LibraryUser charlie = new LibraryUser("charlie", "Charles", 58, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74), 49884577);
 
         // When
         collection.insert(UserAdaptor.toDBObject(charlie));
@@ -119,7 +122,7 @@ public class MongoTests {
     @Test
     public void shouldRetrieveBobFromTheDatabaseWhenHeIsTheOnlyOneInThere() {
         // Given
-        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 10, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854));
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 10, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 486542);
         collection.insert(UserAdaptor.toDBObject(bob));
 
         // When
@@ -133,10 +136,10 @@ public class MongoTests {
     @Test
     public void shouldRetrieveEverythingFromTheDatabase() {
         // Given
-        LibraryUser charlie = new LibraryUser("charlie", "Charles", 24, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74));
+        LibraryUser charlie = new LibraryUser("charlie", "Charles", 24, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74), 74684352);
         collection.insert(UserAdaptor.toDBObject(charlie));
 
-        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 10, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854));
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 10, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 4984354);
         collection.insert(UserAdaptor.toDBObject(bob));
 
         // When
@@ -152,10 +155,10 @@ public class MongoTests {
     @Test
     public void shouldSearchForAndReturnOnlyBobFromTheDatabaseWhenMorePeopleExist() {
         // Given
-        LibraryUser charlie = new LibraryUser("charlie", "Charles", 31, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74));
+        LibraryUser charlie = new LibraryUser("charlie", "Charles", 31, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74), 74684352);
         collection.insert(UserAdaptor.toDBObject(charlie));
 
-        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 10, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854));
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 10, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 48654);
         collection.insert(UserAdaptor.toDBObject(bob));
 
         // When
@@ -171,10 +174,10 @@ public class MongoTests {
     @Test
     public void shouldFindAllDBObjectsWithTheNameCharles() {
         // Given
-        LibraryUser charlie = new LibraryUser("charlie", "Charles", 13, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74));
+        LibraryUser charlie = new LibraryUser("charlie", "Charles", 13, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74), 263484854);
         collection.insert(UserAdaptor.toDBObject(charlie));
 
-        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 21, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854));
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 21, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 4984354);
         collection.insert(UserAdaptor.toDBObject(bob));
 
         // When
@@ -184,6 +187,55 @@ public class MongoTests {
         // Then
         assertThat(results.size(), is(1));
         assertThat((String) results.next().get("_id"), is(charlie.getId()));
+    }
+
+    @Test
+    public void shouldFindAllDBObjectsWithTheNameCharlesAndOnlyReturnNameAndId() {
+        // Given
+        LibraryUser charlie = new LibraryUser("charlie", "Charles", 9, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74), 7865432);
+        collection.insert(UserAdaptor.toDBObject(charlie));
+
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 42, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 4984354);
+        collection.insert(UserAdaptor.toDBObject(bob));
+
+        // When
+        DBObject query = new BasicDBObject("name", "Charlie");
+        // TODO use this query, combined with the "fields" selector, to get a list of result documents with only the name and ID fields
+        DBCursor results = collection.find(new BasicDBObject("name", "Charlie"),
+                new BasicDBObject("_id", 1));
+
+        // Then
+        assertThat(results.size(), is(1));
+        DBObject theOnlyResult = results.next();
+        assertThat((String) theOnlyResult.get("_id"), is(charlie.getId()));
+        assertThat((String) theOnlyResult.get("name"), is(charlie.getName()));
+        assertThat(theOnlyResult.get("address"), is(nullValue()));
+        assertThat(theOnlyResult.get("books"), is(nullValue()));
+    }
+
+    //BONUS
+    @Test
+    public void shouldFindAllDBObjectsWithTheNameCharlesAndExcludeAddressInReturn() {
+        // Given
+        LibraryUser charlie = new LibraryUser("charlie", "Charles", 91, new Address("74 That Place", "LondonTown", 1234567890), asList(1, 74), 49884577);
+        collection.insert(UserAdaptor.toDBObject(charlie));
+
+        LibraryUser bob = new LibraryUser("bob", "Bob The Amazing", 50, new Address("123 Fake St", "LondonTown", 1234567890), asList(27464, 747854), 5486452);
+        collection.insert(UserAdaptor.toDBObject(bob));
+
+        // When
+        // TODO create the correct query to find Charlie by name (see above)
+        DBObject query = null;
+        // TODO use this query, combined with the "fields" selector, to get a list of result documents without address subdocument
+        DBCursor results = null;
+
+        // Then
+        assertThat(results.size(), is(1));
+        DBObject theOnlyResult = results.next();
+        assertThat((String) theOnlyResult.get("_id"), is(charlie.getId()));
+        assertThat((String) theOnlyResult.get("name"), is(charlie.getName()));
+        assertThat(theOnlyResult.get("address"), is(nullValue()));
+        assertThat((List<Integer>) theOnlyResult.get("books"), is(charlie.getBooks()));
     }
 
     @After

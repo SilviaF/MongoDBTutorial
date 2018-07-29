@@ -4,7 +4,7 @@ public class Address {
     private String city;
     private long zip;
 
-    public Address(String street, String city, long zip){
+    public Address(String street, String city, long zip) {
         this.street = street;
         this.city = city;
         this.zip = zip;
@@ -13,30 +13,30 @@ public class Address {
     /************************
      getters
      ************************/
-    public String getStreet(){
+    public String getStreet() {
         return this.street;
     }
 
-    public String getCity(){
+    public String getCity() {
         return this.city;
     }
 
-    public long getZip(){
+    public long getZip() {
         return this.zip;
     }
 
     /************************
      setters
      ************************/
-    public void setStreet(String street){
+    public void setStreet(String street) {
         this.street = street;
     }
 
-    public void setCity(String city){
+    public void setCity(String city) {
         this.city = city;
     }
 
-    public void setZip(long zip){
+    public void setZip(long zip) {
         this.zip = zip;
     }
 

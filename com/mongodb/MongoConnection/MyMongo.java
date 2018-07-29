@@ -26,20 +26,20 @@ public class MyMongo {
 
             //Create User
             LibraryUser newUser = createUser(
-                    "Id3",
+                    "Id4",
                     "Kylo Ren",
                     20,
                     new Address(
                             "Street Address",
                             "City",
-                            12345),
-                    asList(
-                            27464,
-                            747854),
-                    4895138675L);
+                            121345),
+                    asList(27464, 747854),
+                    48951386);
 
             //Insert adapted user to mongoDB
 //            insertUserIntoDB(myMongo.dbCollection, newUser);
+
+            System.out.println(newUser.getAllInfo());
 
             //Retrieve document by Id from mongoDB
             DBObject userFound = getUserByID(myMongo.dbCollection, "anId");
@@ -55,7 +55,7 @@ public class MyMongo {
 
             System.out.println("------------------------------------------");
 
-            results = getSpecificValueByKey(myMongo.dbCollection, "name", "Kylo Ren", "address");
+            results = getSpecificValueByKey(myMongo.dbCollection, "name", "Kylo Ren", "phone");
             for (DBObject result : results){
                 System.out.println("Documents retrieved: " + result.toString());
             }
@@ -127,8 +127,7 @@ public class MyMongo {
     }
 
     public static LibraryUser createUser(String id, String name, int age, Address address, List<Integer> books, long phone) {
-        LibraryUser libraryUser = new LibraryUser(id, name, age, address, books);
-        libraryUser.setPhone(phone);
+        LibraryUser libraryUser = new LibraryUser(id, name, age, address, books, phone);
         return libraryUser;
     }
 
@@ -150,9 +149,8 @@ public class MyMongo {
 
     public static DBCursor getSpecificValueByKey(DBCollection collection, String key, String value, String output){
         DBCursor results = collection.find(new BasicDBObject(key, value),
-                new BasicDBObject(output, 0));
+                new BasicDBObject(output, 1));
         return results;
     }
-
 
 }
